@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>NICO SUITE HOTEL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header" id="header">
+        <div class="head-top">
+            <div class="site-name">
+                <span><span class="HeaderColour">N</span>ICO <span class="HeaderColour"> S</span>UITE<span
+                        class="head-top__dot">.</span> </span>
+            </div>
+            <div class="site-nav">
+                <span id="nav-btn">MENU <i class="fas fa-bars"></i></span>
+            </div>
+        </div>
+
+        <div class="head-bottom flex">
+            <h2>NICE AND COMFOR<span class="HeaderColour">T</span>ABLE PLACE TO STAY</h2>
+            <p>Only the most refreshing and luxury Rooms and Suites are being offered in our Hotel, Privilege reserved
+                only for our guests.
+                It has all the luxury you need. Private relax areas, a secured private parking, speacial exotic drinks,
+                brought to you and many more...</p>
+            <button type="button" class="head-btn"> <a class="head-btn-anchortag" href="#form"> GET STARTED
+                </a></button>
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- side navbar -->
+    <div class="sidenav" id="sidenav">
+        <span class="cancel-btn" id="cancel-btn">
+            <i class="fas fa-times"></i>
+        </span>
+
+        <ul class="navbar">
+            <li><a href="#header">home</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#rooms">rooms</a></li>
+            <li><a href="#customers">customers</a></li>
+        </ul>
+    </div>
+    <!-- end of side navbar -->
+
+    <!-- fullscreen modal -->
+    <div id="modal"></div>
+    <!-- end of fullscreen modal -->
+
+    <!-- body content  -->
+    <section class="services sec-width" id="services">
+        <div class="title">
+            <h2>services</h2>
+        </div>
+        <div class="services-container">
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-utensils"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Food Service/ Food Runner</h2>
+                    <p>Providing food and drink services to guest in Nico Suite hotels restaurants show the
+                        attentiveness, and understanding of the needs and expectation of the guests. Our services in the
+                        hotel restaurant bring good manners, a smart appearance, and impecable personal hygiene are
+                        treated.However, the guest can telephone Room Service for the clearance as and when he has
+                        finished with the meal.</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-building"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Conference Hall</h2>
+                    <p>The neighborhood is peaceful and the environment is serene and clean. We are commited to make
+                        your
+                        stay, interesting, convenient and comfortable. Everything we do in Nico Suite hotel is guided by
+                        our vision to ensure that we all go the extra mile to help our customers and visitors to feel
+                        special.The lifelong experience is being reflected in our visitor's well being.</p>
+                    <button type="#button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-broom"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Housekeeping</h2>
+                    <p>We the Nico suite hotel is always available 24 hours in cleaning guestrooms mid-stay and after
+                        departure. Making beds, Replacing dirty linens and towels. Restocking guestroom amenities like
+                        toiletries, drinking glasses, and notepads. Cleaning back-of-house areas like office and
+                        employee changing rooms.</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-door-closed"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Room Security</h2>
+                    <p>We provide and enhance operational efficiency with our reliable security.In Nico hotel our guest
+                        have the understanding that he and his belongings both will be safe and secure during his stay
+                        at the hotel. The hotel staff and assets are protected and secured. Safety and security is
+                        always the first priority towards guest services. </p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+        </div>
+    </section>
+
+    <div class="book" id="form">
+        <!-- <form class="book-form"> -->
+        <form class="book-form" action="mailto:nngg5000@yahoo.com" method="post" enctype="text/plain">
+
+            <div class="form-item">
+                <label for="checkin-date">Check In Date: </label>
+                <input name="checkin-date" type="date" id="chekin-date">
+            </div>
+            <div class="form-item">
+                <label for="checkout-date">Check Out Date: </label>
+                <input name="checkout-date" type="date" id="chekout-date">
+            </div>
+            <div class="form-item">
+                <label for="email">Email: </label>
+                <input name="email" type="email" name="email" placeholder="Email" required="" autocomplete="off"
+                    id="adult">
+            </div>
+            <div class="form-item">
+                <label for="number">PhoneNumber: </label>
+                <input type="number" name="number" placeholder="Phone Number" required="" autocomplete="off"
+                    id="children">
+            </div>
+            <div class="form-item">
+                <label for="rooms">Rooms Type: </label>
+                <select class="form-item__DropdownOption" name="rooms" id="rooms">
+                    <option name="rooms" value="Rooms">Deluxe</option>
+                    <option name="rooms" value="Rooms">Luxury</option>
+                    <option name="rooms" value="Rooms">Classic</option>
+                    <option name="rooms" value="Rooms">Executive</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <input type="submit" class="btn" value="Book Now">
+            </div>
+        </form>
+    </div>
+
+    <section class="rooms sec-width" id="rooms">
+        <div class="title">
+            <h2>rooms</h2>
+        </div>
+        <div class="rooms-container">
+            <!-- single room -->
+            <article class="room">
+                <div class="room-image">
+                    <img src="images/img1.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>Deluxe Rooms</h3>
+                    <p>Nico Suite Hotel, the rooms are well appointed and designed to provide comfort and convenience.
+                        which are well decorated and designed for your comfort and relaxation.</p>
+                    <p>The hotel rooms is tucked in the most discreet part of the property with 88 large suites. The
+                        property offer a peaceful, quiet and relaxing ambience. Caring comes easily to those of us who
+                        are privilege to cater to you at Nico Suite Signature. The vibrant colours of the furnishing
+                        indulges you.</p>
+                    <p class="rate">
+                        <span>#16,000 /</span> Per Night
+                    </p>
+                    <!-- <button type="button" class="btn">book now</button> -->
+                    <button type="button" class="btn"><a class="RoomsBtn__book-now" href="#form">book now</a></button>
+                </div>
+            </article>
+            <!-- end of single room -->
+            <!-- single room -->
+            <article class="room">
+                <div class="room-image">
+                    <img src="images/img2.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>Luxury Rooms</h3>
+                    <p> Luxury room is a spacious room with two separate beds. This room is ideal for a family that wish
+                        to stay in the same room. Equipped
+                        with the usual tasteful furnishing, the room consists of a twin bed, flat screen TV, easy chairs
+                        and a minibar.
+                    </p>
+                    <p>
+                        The room also has a fully furnished bathroom, branded toiletries, ironing board and a safe. With
+                        a highly secure key
+                        card, and automated central cooling system, guests are assured of security, comfort while
+                        staying in our luxury bedroom.</p>
+                    <p class="rate">
+                        <span>#16,000 /</span> Per Night
+                    </p>
+                    <button type="button" class="btn"><a class="RoomsBtn__book-now" href="#form">book now</a></button>
+                </div>
+            </article>
+            <!-- end of single room -->
+            <!-- single room -->
+            <article class="room">
+                <div class="room-image">
+                    <img src="images/img3.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>Classic Rooms</h3>
+                    <p>Rooms at Nico Hotel have everything you need. From a comfortable double bed, to dressing table,
+                        to easy chairs and
+                        cable TV. This well finished, space like all our other spaces sets us aside from other hotels in
+                        lagos</p>
+                    <p>As our budget room, the Classic room far exceeds the quoted price in quality. The electronic key
+                        card provides
+                        security to guest properties, and traceable entries into the room. with our combined security
+                        and luxury, guests
+                        will feel safe while staying with us.</p>
+                    <p class="rate">
+                        <span>#16,000 /</span> Per Night
+                    </p>
+                    <!-- <button type="button" class="btn">book now</button> -->
+                    <button type="button" class="btn"><a class="RoomsBtn__book-now" href="#form">book now</a></button>
+                </div>
+
+            </article>
+            <article class="room">
+                <div class="room-image">
+                    <img src="/images/3.jpg" height="400" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>Executive Rooms</h3>
+                    <p>The Executive Room is spacious room, This room combines the design of
+                        an Executive suite and the superior room. The room is spacious with a big screen TV, and is
+                        testefully furnished. The bedroom is furnished with the usual accessories cozy queen sized bed
+                        and minibar among others.</p>
+                    <p>The room is also designed for guests and which is build with excellent furnishing,
+                        this room combines a price and luxury advantage, among other hotel in Lagos.The glass shower,
+                        clean well maintained bathroom, ironing board and comfortable furnishing gives guest a feeling
+                        of comfort and relaxation.</p>
+                    <p class="rate">
+                        <span>#16,000 /</span> Per Night
+                    </p>
+                    <button type="button" class="btn"><a class="RoomsBtn__book-now" href="#form">book now</a></button>
+                </div>
+
+            </article>
+            <!-- end of single room -->
+        </div>
+    </section>
+
+
+    <section class="customers" id="customers">
+        <div class="sec-width">
+            <div class="title">
+                <h2>customers</h2>
+            </div>
+            <div class="customers-container">
+                <!-- single customer -->
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                    </div>
+                    <h3>We Loved it</h3>
+                    <p>Very friendly staff, basic room but had everything I need, clean and tidy and good value for
+                        money considering the
+                        central location . Had breakfast delivered to my room and it was
+                        absolutely fabulous. They
+                        called to ask what I would like and delivered beyond expectations</p>
+                    <img src="images/staff-3.jpg" alt="customer image">
+                    <span>Christine Anna, Germany</span>
+                </div>
+                <!-- end of single customer -->
+                <!-- single customer -->
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                    </div>
+                    <h3>Comfortable Living</h3>
+                    <p>Affordable price, excellent location!
+                        Quite smooth reservation process, very friendly service at the desk, clean & large room for two,
+                        very quiet over the
+                        rooftops - a very pleasant stay at the heart of lagos, in the middle of
+                        practically everything!</p>
+                    <img src="images/testimonial-1.jpg" alt="customer image">
+                    <span>Mary , Greece</span>
+                </div>
+                <!-- end of single customer -->
+                <!-- single customer -->
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                    </div>
+                    <h3>Nice Place</h3>
+                    <p>This is tidy, friendly hotel that gives good value for money and the location is excellent! I
+                        also appreciate that this
+                        hotel is linked in supporting youth work and sports, so by staying here I feel like I am
+                        supporting these activities in
+                        a convenient and practical way, too!</p>
+
+                    <img src="images/post-4.png" alt="customer image">
+                    <span>Michael, Italy</span>
+                </div>
+                <!-- end of single customer -->
+            </div>
+        </div>
+    </section>
+    <!-- end of body content -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <h2 class="FooterTitle-h2">About Us </h2>
+                <p>Only the most refreshing and luxury Rooms and Suites are being offered in our Hotel, Privilege
+                    reserved
+                    only for our guests.</p>
+                <ul class="social-icons">
+                    <li class="flex">
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </li>
+                    <li class="flex">
+                        <i class="fa fa-facebook fa-2x"></i>
+                    </li>
+                    <li class="flex">
+                        <i class="fa fa-instagram fa-2x"></i>
+                    </li>
+                    <li class="flex">
+                        <i class="fa fa-linkedin fa-2x"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="FooterTitle-h2">Useful Links</h2>
+                <a href="#">Blog</a>
+                <a href="#">Rooms</a>
+                <a href="#">Subscription</a>
+                <a href="#">Gift Card</a>
+            </div>
+
+            <div>
+                <h2 class="FooterTitle-h2">Quick Links</h2>
+                <a href="#">Home</a>
+                <a href="#services">Services</a>
+                <a href="#rooms">Rooms</a>
+                <a href="#customers">Customers</a>
+            </div>
+
+            <div>
+                <h2 class="FooterTitle-h2">Contact Us</h2>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span>
+                        Ayawo close, Nepa Bus Stop, Iyana Ejigbo, Lagos Nigeria.
+                        <!-- 203 Fake St.Mountain View, San Francisco, California, USA -->
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-phone-alt"></i>
+                    </span>
+                    <span>
+                        08022687874
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>
+                        nngg5000@yahoo.com
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <li class="fas">
+                            <img class="payment-methods" src="/images/payment.png" alt="">
+                        </li>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
